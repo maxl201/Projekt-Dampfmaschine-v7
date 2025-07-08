@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt Dampfmaschine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+    <!-- Burger-Menü-Button -->
+<button class="burger-button" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar hidden">
+  <nav>
+    <a href="geschichte.html">Geschichte</a>
+    <a href="erklärung.html">Erklärung</a>
+    <a href="Unser_Projekt.html">Unser Projekt</a>
+  </nav>
+</div>
+
+
+ 
+  <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+
+
+  <div class="banner">
+    <div class="lauftext">
+      Maxi &nbsp;&nbsp;&nbsp;&nbsp; Max &nbsp;&nbsp;&nbsp;&nbsp; Andrin &nbsp;&nbsp;&nbsp;&nbsp; Mario
+    </div>
+  </div>
+
+  
+
+
+  <h1>Projekt Dampfmaschine</h1>
+  <br>
+  <h2>Geschichte</h2>
+
+
+<br><br>
+
+
+
+<div class="text-section">
+<p>Die Dampfmaschine ist eine der bedeutendsten Erfindungen der Industriellen Revolution und hat die Welt grundlegend verändert.</p>
+
+<p>Ihre Entwicklung begann im 17. Jahrhundert, doch erst im 18. Jahrhundert wurde sie zu einer leistungsfähigen Maschine, die in der Industrie genutzt werden konnte.</p>
+
+<p>Der britische Ingenieur Thomas Newcomen schuf 1712 die erste praktische Dampfmaschine, die vor allem zum Pumpen in Bergwerken verwendet wurde.</p>
+
+<p>Später, im 18. Jahrhundert, verbesserte James Watt die Konstruktion erheblich, wodurch die Effizienz und Leistungsfähigkeit der Dampfmaschine deutlich gesteigert wurde.</p>
+
+<p>Mit dieser Innovation wurde die Dampfmaschine zum wichtigsten Teil der industriellen Produktion, sie trieb Fabriken, Eisenbahnen und Schiffe an.</p>
+
+<p>Die Erfindung revolutionierte die Wirtschaft, ermöglichte eine schnellere Produktion und führte zu einer erheblichen Stadtvergrößerung, da immer mehr Menschen an industrielle Städte ansiedelten.</p>
+
+<p>Die Dampfmaschine gilt als eine der wichtigsten technischen Errungenschaften, die den Übergang von einer landwirtschaftlichen zu einer industriellen Gesellschaft markierte.</p>
+
+<p>Ihre Entwicklung legte den Grundstein für die moderne Maschinen- und Antriebstechnik und beeinflusste die technologische Entwicklung bis in die heutige Zeit.</p>
+
+</div>
+
+
+  
+
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.querySelector(".mode-toggle");
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        btn.textContent = "🌙";
+      } else {
+        btn.textContent = "☀️";
+      }
+    }
+  </script>
+
+  <script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("hidden");
+  }
+</script>
+
+
+</body>
+</html>
